@@ -1,0 +1,94 @@
+Welcome to Node.js v14.17.0.
+Type ".help" for more information.
+** EXEMPLOS ORDEM DE PRECEDENCIA NO NODE **
+> 5 + 2
+7
+> 9 % 2
+1
+> 9 / 2
+4.5
+> 5 + 3 / 2
+6.5
+> 5 + / 2
+5 + / 2
+    ^
+Uncaught SyntaxError: Invalid regular expression: missing /
+> 5 + 3 / 2
+6.5
+> (5 + 3) / 2
+4
+>
+
+
+** EXEMPLOS ORDEM DE PRECEDENCIA COM VARIAVEIS NO NODE **
+> var a = 5 + 3
+undefined
+> var a
+undefined
+> a
+8
+> var b = a % 5
+undefined
+> b
+3
+> var c = 5 * b ** 2
+undefined
+> c
+45
+> var d = 10 - a / 2
+undefined
+> d
+6
+> var e = 6 * 2 / d
+undefined
+> e
+2
+> var f = b % e + 4 / e
+undefined
+> f
+3
+>
+
+
+** EXEMPLOS AUTO ATRIBUIÇÃO **
+> var n = 3
+undefined
+> n = n + 4
+7
+>
+> var num = 8
+undefined
+> num
+8
+> num += 2
+10
+> num
+10
+> num %= 2
+0
+> num = 3
+3
+> num **= 2
+9
+>
+
+
+** EXEMPLOS INCREMENTO **
+$ node
+> var n = 10
+undefined
+> n
+10
+> n++
+10
+> n
+11
+> n --
+11
+> n
+10
+> ++n
+11
+> --n
+10
+>
